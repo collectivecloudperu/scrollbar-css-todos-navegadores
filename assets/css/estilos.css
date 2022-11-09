@@ -1,0 +1,41 @@
+/* Firefox  */
+.scrollbar-personalizado {
+    scrollbar-width: thin;
+    scrollbar-color: #ff7f00 #d7be75;
+}
+
+/* Chrome, Opera, Edge, etc.  */
+.scrollbar-personalizado::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.scrollbar-personalizado::-webkit-scrollbar-track {
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+
+.scrollbar-personalizado::-webkit-scrollbar-thumb {
+    background-color: #ff7f00;
+}
+
+.scrollbar-personalizado::-webkit-scrollbar-thumb:hover {
+    background-color: #e67200;
+}
+
+.scrollbar-personalizado::-webkit-scrollbar-corner, .scrollbar-personalizado::-webkit-scrollbar-track {
+    background-color: #d7be75;
+}
+    
+/* Estilos para visualizar los Scrollbars */   
+[class^=scrollbar] {    
+    overflow-y: scroll;
+    height: 200px;
+}
+
+[class^=scrollbar] div {
+    background-image: linear-gradient(130deg, #e8e6e6 0%, #ffffff 100%);
+    padding: 50px;    
+    width: 250%;    
+    height: 400px;    
+} 
